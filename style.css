@@ -45,6 +45,7 @@ nav ul li {
 
 a {
   color: #ff0000;
+  font-size: 1.2rem;
 }
 
 .container {
@@ -65,10 +66,9 @@ a {
   min-width: 300px;
 }
 
-col-2 img {
+.col-2 img {
   max-width: 100%;
   padding: 50px 0;
-  background: #ecdcdc;
 }
 
 .col-2 h1 {
@@ -98,6 +98,7 @@ p {
 
 .fa-shopping-cart {
   color: #ff0000;
+  font-size: 1.2rem;
 }
 
 .btn:hover {
@@ -123,7 +124,11 @@ p {
   margin: auto;
   padding: 0 25px;
 }
-
+.small-container h4,
+p,
+.rating {
+  padding-left: 30px;
+}
 .col-4 {
   flex-basis: 25%;
   padding: 10px;
@@ -284,4 +289,51 @@ h4 {
 }
 .app-logo img {
   width: 140px;
+}
+
+.fa-bars {
+  margin-left: 20px;
+  color: #ff0000;
+  width: 28px;
+  font-size: 1.5rem;
+  display: none;
+}
+
+/* media query for menu */
+
+@media screen and (max-width: 900px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #5d6161;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  .fa-bars {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* media query for less than 700 screen size */
+@media screen and (max-width: 700px) {
+  .row {
+    text-align: center;
+  }
+  .col-2,
+  .col-3,
+  .col-4 {
+    flex-basis: 100%;
+  }
 }
