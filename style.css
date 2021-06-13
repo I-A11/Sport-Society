@@ -246,6 +246,8 @@ h4 {
   color: #fff;
   font-size: 1rem;
   padding: 60px 0 20px;
+  bottom: 0;
+  margin-bottom: 0;
 }
 .footer p {
   font-size: 15px;
@@ -406,7 +408,7 @@ input:focus {
   outline: none;
 }
 .single-product .fa-indent {
-  color: #1da7a7;
+  color: #c70c15;
   margin-left: 10px;
 }
 
@@ -418,6 +420,66 @@ input:focus {
   flex-basis: 24%;
   cursor: pointer;
 }
+/* cart items details */
+.cart-page {
+  margin: 80px 100px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cart-info p {
+  padding: 0;
+}
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #c70c15;
+  font-weight: normal;
+}
+td {
+  padding: 10px 5px;
+}
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a {
+  color: #c70c15;
+  font-size: 12px;
+}
+
+td img {
+  width: 100px;
+  height: 80px;
+  margin-right: 10px;
+}
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid #c70c15;
+  width: 100%;
+  max-width: 350px;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+th:last-child {
+  text-align: right;
+}
 
 /* media query for less than 700 screen size */
 @media screen and (max-width: 700px) {
@@ -428,5 +490,18 @@ input:focus {
   .col-3,
   .col-4 {
     flex-basis: 100%;
+  }
+  .single-product .row {
+    text-align: left;
+  }
+  .single-product .col-2 {
+    padding: 20px 0;
+  }
+  .single-product h1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .cart-info p {
+    display: none;
   }
 }
