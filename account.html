@@ -45,91 +45,36 @@
       </div>
     </div>
 
-    <!-- cart items details -->
-    <div class="small-container cart-page">
-      <table>
-        <tr>
-          <th>Product</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img
-                src="./images/single-product 1.jpg"
-                class="cart-img"
-                alt="image"
-              />
-              <div>
-                <p>Tee Peacoat Mens</p>
-                <small>price: $50.00</small>
-                <br />
-                <a href="">Remove</a>
+    <!-- account page -->
+    <div class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="./images/img-2.jpg" alt="image" width="100%" />
+          </div>
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span class="login">Login</span>
+                <span class="register">Register</span>
+                <hr id="indicator" />
               </div>
+              <form id="login-form">
+                <input type="text" placeholder="Username" required />
+                <input type="password" placeholder="Password" required />
+                <button type="submit" class="btn">Login</button>
+                <a href="">Forgot Password</a>
+              </form>
+
+              <form id="register-form">
+                <input type="text" placeholder="Username" required />
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <button type="submit" class="btn">Register</button>
+              </form>
             </div>
-          </td>
-
-          <td><input type="number" value="1" /></td>
-          <td>$50.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img
-                src="./images/Newton Running.jpg"
-                class="cart-img"
-                alt="image"
-              />
-              <div>
-                <p>Newton Running</p>
-                <small>price: $150.00</small>
-                <br />
-                <a href="">Remove</a>
-              </div>
-            </div>
-          </td>
-
-          <td><input type="number" value="1" /></td>
-          <td>$150.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img
-                src="./images/Garmin Edge.jpg"
-                class="cart-img"
-                alt="image"
-              />
-              <div>
-                <p>Garmin Edge</p>
-                <small>price: $300.00</small>
-                <br />
-                <a href="">Remove</a>
-              </div>
-            </div>
-          </td>
-
-          <td><input type="number" value="1" /></td>
-          <td>$300.00</td>
-        </tr>
-      </table>
-
-      <div class="total-price">
-        <table>
-          <tr>
-            <td>Subtotal</td>
-            <td>500.00</td>
-          </tr>
-          <tr>
-            <td>Tax</td>
-            <td>50.00</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>550.00</td>
-          </tr>
-        </table>
+          </div>
+        </div>
       </div>
     </div>
 
